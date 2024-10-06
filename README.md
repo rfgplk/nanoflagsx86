@@ -1,5 +1,5 @@
 <h1>nanoflagsx86</h1>
-<h2>Nanoscopic CPUID library</h2>
+<h2>📚 Nanoscopic CPUID library</h2>
 
 This is a (truly) tiny C library for detecting CPU features in 675 sloc.
 The simplest possible drop-in replacement for any other cpuid reading library.
