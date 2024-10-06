@@ -1,0 +1,13 @@
+# build.ninja
+timer = /usr/bin/time -p
+compiler = gcc
+cflags = -std=c99 -O3 -D_GNU_SOURCE -march=native -Wall -Wextra -Wpedantic -Wfatal-errors
+
+build_directory = bin
+
+rule compile_x86
+  command = mkdir -p bin && $timer $compiler $cflags $in -o $build_directory/$out
+
+
+build x86_cpu: compile_x86 tests/cpu.c
+build x86_flags: compile_x86 tests/flags.c
