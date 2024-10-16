@@ -7,10 +7,10 @@
 
 
 This is a (truly) tiny C library for detecting CPU features in 675 sloc.
-The simplest possible drop-in replacement for any other cpuid reading library.
+The simplest possible drop-in replacement for any other cpuid reading library, in lieu of reading `/proc/cpuinfo`
 
 Absolutely no dependencies, except the following, which your system must provide:
-```
+```cpp
 <unistd.h>
 <sched.h>
 <sys/types.h>
@@ -28,7 +28,7 @@ Compliant with C99.
 
 
 ## Usage
-```
+```cpp
 #include "src/x86.h"
 
 int
