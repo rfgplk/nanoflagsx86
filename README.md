@@ -17,7 +17,7 @@ Absolutely no dependencies, except the following, which your system must provide
 ... otherwise all code was written from scratch, and is directly provided under `src/`. 
 
 
-This will detect features on pretty much all x86 cpu's, but as of now it's still missing naming support for more modern >2020 cores, which I'll get around to adding eventually.
+This will detect features on pretty much all x86 cpu's, updated to supports all x86 core features.
 
 
 Compliant with C99. 
